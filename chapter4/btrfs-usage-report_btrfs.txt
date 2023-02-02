@@ -1,0 +1,91 @@
+Btrfs usage report for /btrfs
+Filesystem ID: 6c8ccaad-f9a0-4957-919e-8d87e02078e3
+Mixed groups: False
+
+Total physical space usage:
+| 
+| Total filesystem size: 80.00GiB
+| Allocated bytes: 50.56GiB
+| Allocatable bytes remaining: 29.44GiB
+
+Target profiles:
+|
+| type         profile     
+| ----         -------     
+| System       DUP         
+| Metadata     DUP         
+| Data         single      
+
+Estimated virtual space left for use:
+|
+| type         free        
+| ----         ----        
+| Data         28.44GiB    
+| MetaData     1.20GiB     
+
+Virtual space usage by block group type:
+|
+| type                total         used
+| ----                -----         ----
+| Data             50.00GiB     49.00GiB
+| System           32.00MiB     16.00KiB
+| Metadata        256.00MiB     55.61MiB
+
+Allocated raw disk bytes by chunk type.
+|
+| flags               allocated         used    parity *)
+| -----               ---------         ----    ---------
+| DATA                 50.00GiB     49.00GiB        0.00B
+| SYSTEM|DUP           64.00MiB     32.00KiB        0.00B
+| METADATA|DUP        512.00MiB    111.22MiB        0.00B
+|
+| *) Parity is a reserved part of the allocated bytes, limiting the
+|    amount that can be used for data or metadata.
+
+Allocated bytes per device:
+|
+| devid      total size    allocated path
+| -----      ----------    --------- ----
+| 1            50.00GiB     34.56GiB /dev/vdb
+| 2            10.00GiB      3.00GiB /dev/vdc
+| 3            20.00GiB     13.00GiB /dev/vdd
+
+Allocated bytes per device, split up by chunk type.
+|
+| Device ID: 1
+| | flags               allocated    parity *)
+| | -----               ---------    ---------
+| | SYSTEM|DUP           64.00MiB        0.00B
+| | METADATA|DUP        512.00MiB        0.00B
+| | DATA                 34.00GiB        0.00B
+|
+| Device ID: 2
+| | flags               allocated    parity *)
+| | -----               ---------    ---------
+| | DATA                  3.00GiB        0.00B
+|
+| Device ID: 3
+| | flags               allocated    parity *)
+| | -----               ---------    ---------
+| | DATA                 13.00GiB        0.00B
+|
+| *) Parity is a reserved part of the allocated bytes, limiting the
+|    amount that can be used for data or metadata.
+
+Unallocatable raw disk space:
+|
+| Reclaimable (by using balance): 0.00B
+| Not reclaimable (because of different disk sizes): 0.00B
+
+Unallocatable bytes per device, given current target profiles:
+|
+| devid         soft *)     hard **) reclaimable ***)
+| -----         -------     -------- ----------------
+| 1               0.00B        0.00B            0.00B
+| 2               0.00B        0.00B            0.00B
+| 3               0.00B        0.00B            0.00B
+|
+|   *) Because allocations in the filesystem are unbalanced.
+|  **) Because of having different sizes of devices attached.
+| ***) Amount of 'soft' unallocatable space that can be reclaimed,
+|      before hitting the 'hard' limit.
