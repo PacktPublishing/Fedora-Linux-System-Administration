@@ -1,0 +1,11 @@
+[connection]
+id=Main ethX
+uuid=c7947caa-0920-4648-9e9f-d8b66f94641f
+type=802-1-ethernet
+autoconnect=true
+
+[ipv4]
+method=auto
+
+[802-1-ethernet]
+mac-address=XX:XX:XX:XX:XX:XX

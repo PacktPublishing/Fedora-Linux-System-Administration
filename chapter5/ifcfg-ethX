@@ -1,0 +1,9 @@
+DEVICE=ethX
+BOOTPROTO=static
+IPADDR=xx.xx.xx.xx
+NETMASK=xx.xx.xx.xx
+GATEWAY=xx.xx.xx.xx
+DNS1=xx.xx.xx.xx
+HOSTNAME=host.example.com
+HWADDR=XX:XX:XX:XX:XX:XX  
+USERCTL=no
