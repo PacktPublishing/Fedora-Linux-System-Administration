@@ -1,0 +1,13 @@
+app-id: org.flatpak.script 
+runtime: org.freedesktop.Platform 
+runtime-version: '22.08' 
+sdk: org.freedesktop.Sdk 
+command: script.sh 
+modules: 
+  - name: script 
+    buildsystem: simple 
+    build-commands: 
+      - install -D script.sh /app/bin/script.sh 
+    sources: 
+      - type: file 
+        path: script.sh
