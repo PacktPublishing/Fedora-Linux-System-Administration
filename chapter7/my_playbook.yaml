@@ -1,4 +1,4 @@
-- name: Mi first playbook
+- name: My first playbook
   remote_user: admin
   hosts: webservers
   become: yes
