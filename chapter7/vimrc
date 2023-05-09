@@ -1,0 +1,5 @@
+set ts=2
+set et
+set ai
+:command! TellDate echo call("strftime", [<args>])
+let g:airline_powerline_fonts = 1

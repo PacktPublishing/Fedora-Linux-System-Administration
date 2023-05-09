@@ -1,0 +1,122 @@
+root:x:0:0:Super User:/root:/bin/bash
+bin:x:1:1:bin:/bin:/usr/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/usr/sbin/nologin
+adm:x:3:4:adm:/var/adm:/usr/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/usr/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/usr/sbin/nologin
+operator:x:11:0:operator:/root:/usr/sbin/nologin
+games:x:12:100:games:/usr/games:/usr/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/usr/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/usr/sbin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/sbin/nologin
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+tss:x:59:59:Account used for TPM access:/:/usr/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/usr/sbin/nologin
+systemd-oom:x:999:999:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/usr/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+polkitd:x:998:997:User for polkitd:/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+geoclue:x:997:996:User for geoclue:/var/lib/geoclue:/sbin/nologin
+nm-openconnect:x:996:995:NetworkManager user for OpenConnect:/:/sbin/nologin
+colord:x:995:994:User for colord:/var/lib/colord:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+gluster:x:994:993:GlusterFS daemons:/run/gluster:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/proc:/sbin/nologin
+pipewire:x:993:992:PipeWire System Daemon:/var/run/pipewire:/sbin/nologin
+chrony:x:992:990:chrony system user:/var/lib/chrony:/sbin/nologin
+dnsmasq:x:991:989:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/usr/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+saslauth:x:990:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+openvpn:x:989:988:OpenVPN:/etc/openvpn:/sbin/nologin
+nm-openvpn:x:988:987:Default user for running openvpn spawned by NetworkManager:/:/sbin/nologin
+unbound:x:987:986:Unbound DNS resolver:/var/lib/unbound:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+flatpak:x:986:984:Flatpak system helper:/:/usr/sbin/nologin
+gdm:x:42:42:GNOME Display Manager:/var/lib/gdm:/usr/sbin/nologin
+gnome-initial-setup:x:985:983::/run/gnome-initial-setup/:/sbin/nologin
+vboxadd:x:984:1::/var/run/vboxadd:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/usr/sbin/nologin
+tcpdump:x:72:72:tcpdump:/:/usr/sbin/nologin
+systemd-coredump:x:978:978:systemd Core Dumper:/:/usr/sbin/nologin
+systemd-timesync:x:977:977:systemd Time Synchronization:/:/usr/sbin/nologin
+acallejas:x:1000:1000:Alex Callejas:/home/acallejas:/bin/bash
+clevis:x:976:976:Clevis Decryption Framework unprivileged user:/var/cache/clevis:/usr/sbin/nologin
+**************************************************************************************************************+++
+root:x:0:
+bin:x:1:
+daemon:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mem:x:8:
+kmem:x:9:
+wheel:x:10:acallejas
+cdrom:x:11:
+mail:x:12:
+man:x:15:
+dialout:x:18:
+floppy:x:19:
+games:x:20:
+tape:x:33:
+video:x:39:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+users:x:100:
+nobody:x:65534:
+dbus:x:81:
+apache:x:48:
+utmp:x:22:
+utempter:x:35:
+tss:x:59:clevis
+input:x:104:
+kvm:x:36:qemu
+render:x:105:
+sgx:x:106:
+systemd-journal:x:190:
+systemd-network:x:192:
+systemd-oom:x:999:
+systemd-resolve:x:193:
+printadmin:x:998:
+qemu:x:107:
+polkitd:x:997:
+avahi:x:70:
+dip:x:40:
+geoclue:x:996:
+nm-openconnect:x:995:
+colord:x:994:
+usbmuxd:x:113:
+gluster:x:993:
+rtkit:x:172:
+pipewire:x:992:
+brlapi:x:991:
+chrony:x:990:
+dnsmasq:x:989:
+rpc:x:32:
+saslauth:x:76:saslauth
+rpcuser:x:29:
+openvpn:x:988:
+nm-openvpn:x:987:
+unbound:x:986:
+libvirt:x:985:
+abrt:x:173:
+flatpak:x:984:
+gdm:x:42:
+gnome-initial-setup:x:983:
+vboxsf:x:982:
+sshd:x:74:
+power:x:981:
+tcpdump:x:72:
+plocate:x:980:
+gamemode:x:979:
+systemd-coredump:x:978:
+systemd-timesync:x:977:
+acallejas:x:1000:
+clevis:x:976:
