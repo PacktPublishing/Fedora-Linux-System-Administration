@@ -1,0 +1,19 @@
+- name: Mi first playbook
+  remote_user: admin
+  hosts: webservers
+  become: yes
+  become_method: sudo
+  become_user: webmaster
+  gather_facts: False
+
+  tasks:
+    - name: Copy files
+      ansible.builtin.copy:
+        src: myfile
+        dest: /tmp/myfile
+
+    - name: Restart apache
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
+
